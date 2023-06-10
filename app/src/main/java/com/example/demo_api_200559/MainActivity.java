@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onResponse(JSONObject response) {
                                     try {
                                         if (response.getString("status").equals("Producto Eliminado")) {
-                                            Toast.makeText(MainActivity.this, "Producto Eliminado", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(MainActivity.this, "Producto no encontrado", Toast.LENGTH_SHORT).show();
                                             etCodigoBarras.setText("");
                                             etDescripcion.setText("");
                                             etMarca.setText("");
