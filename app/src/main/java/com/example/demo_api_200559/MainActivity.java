@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onResponse(JSONObject response) {
                                     try {
                                         if (response.getString("status").equals("Producto Eliminado")) {
-                                            Toast.makeText(MainActivity.this, "Producto no encontrado", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(MainActivity.this, "Producto eliminado", Toast.LENGTH_SHORT).show();
                                             etCodigoBarras.setText("");
                                             etDescripcion.setText("");
                                             etMarca.setText("");
@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
                                         try {
                                             if (response.has("status")) {
                                                 String status = response.getString("status");
-                                                if (status.equals("Producto Eliminado")) {
+                                                if (status.equals("Producto Actualizado")) {
                                                     if (productos.length() > 1) {
                                                         Toast.makeText(MainActivity.this, "Producto actualizado", Toast.LENGTH_SHORT).show();
                                                         etCodigoBarras.setText("");
