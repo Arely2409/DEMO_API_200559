@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etCodigoBarras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código de barras"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textAlignment="center"
+        android:layout_below="@id/etCodigoBarras"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <EditText
+        android:id="@+id/etMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marca"
+        android:textAlignment="center"
+        android:layout_below="@id/etDescripcion"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <EditText
+        android:id="@+id/etPrecioC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio compra"
+        android:textAlignment="center"
+        android:layout_below="@id/etMarca"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <EditText
+        android:id="@+id/etPrecioV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio venta"
+        android:textAlignment="center"
+        android:layout_below="@id/etPrecioC"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <EditText
+        android:id="@+id/etExistencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Existencias"
+        android:textAlignment="center"
+        android:layout_below="@id/etPrecioV"
+        android:backgroundTint="@color/design_default_color_primary"
+        />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_below="@id/etExistencias"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guaradar"
+        android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/btnBuscar"
+        android:layout_below="@id/etExistencias" />
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:layout_marginLeft="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/btnBuscar"
+        android:layout_below="@id/etExistencias" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnBuscar" />
+
+    <ListView
+        android:id="@+id/lvProducto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnEliminar"/>
+
+
+
+
+</RelativeLayout>
